@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Localization</string>
+    <string name="hello_world">Chào thế giới!</string>
+    <string name="flag_description">Lá cờ của quốc gia</string>
+    <string name="english">Tiếng Anh</string>
+    <string name="vietnamese">Tiếng Việt</string>
+    <string name="chinese">Tiếng Trung</string>
+</resources>

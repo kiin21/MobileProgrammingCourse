@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:backgroundTint="#2563EB"
+    android:textColor="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textColor="#1E293B"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Flag Image -->
+
+    <!-- Language Buttons -->
+    <ImageView
+        android:contentDescription="@string/flag_description"
+        android:layout_marginTop="100dp"
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/flag" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEnglish"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#90ADE7"
+            android:background="@color/white"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/english"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnVietnamese"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#DC6464"
+            android:background="@color/white"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/vietnamese"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnChinese"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#90F2D4"
+            android:background="@color/white"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:text="@string/chinese"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>
