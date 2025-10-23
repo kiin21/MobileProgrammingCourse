@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.student.mypractices.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_coffeeOrderFragment"
+            app:destination="@id/coffeeOrderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_flashlightFragment"
+            app:destination="@id/flashlightFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tipCalculatorFragment"
+            app:destination="@id/tipCalculatorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tipCalculatorFragment"
+        android:name="com.student.mypractices.TipCalculatorFragment"
+        android:label="Tip Calculator"
+        tools:layout="@layout/fragment_tip_calc" />
+
+    <fragment
+        android:id="@+id/coffeeOrderFragment"
+        android:name="com.student.mypractices.CoffeeOrderFragment"
+        android:label="Coffee Order"
+        tools:layout="@layout/fragment_coffee_order" />
+
+    <fragment
+        android:id="@+id/flashlightFragment"
+        android:name="com.student.mypractices.FlashlightFragment"
+        android:label="Flashlight"
+        tools:layout="@layout/fragment_flashlight" />
+
+</navigation>

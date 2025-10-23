@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".HomeFragment">
+
+    <Button
+        android:id="@+id/btn_coffee_order"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/coffee_order" />
+
+    <Button
+        android:id="@+id/btn_flashlight"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/flashlight"/>
+
+    <Button
+        android:id="@+id/btn_tip_calculator"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tip_calculator"/>
+
+</LinearLayout>

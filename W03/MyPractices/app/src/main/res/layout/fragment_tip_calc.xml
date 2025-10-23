@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@color/backgroundColor"
+    tools:context=".TipCalculatorFragment">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_calculator"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginBottom="28dp" />
+
+    <!-- Bill Amount -->
+    <EditText
+        android:id="@+id/etBillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bill_amount"
+        android:inputType="numberDecimal"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tip Percentage -->
+    <EditText
+        android:id="@+id/etTipPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tip_percentage"
+        android:inputType="numberDecimal"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Number of People -->
+    <EditText
+        android:id="@+id/etNumberOfPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/no_of_people"
+        android:inputType="number"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginBottom="28dp" />
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_tip"
+        android:backgroundTint="@color/primaryButtonColor"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:layout_marginBottom="36dp" />
+
+    <!-- Results Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="?android:attr/dividerVertical"
+        android:showDividers="middle"
+        android:dividerPadding="8dp">
+
+        <!-- Tip Amount Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tip_amount"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTipAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_amount"
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Total Amount Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/total_amount"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_amount"
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Total Per Person Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/total_per_person"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTotalPerPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_amount"
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

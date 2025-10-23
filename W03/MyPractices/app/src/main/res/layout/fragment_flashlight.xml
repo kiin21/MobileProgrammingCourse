@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".FlashlightFragment">
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnColorRed"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/red" />
+
+        <Button
+            android:id="@+id/btnColorGreen"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/green" />
+
+        <Button
+            android:id="@+id/btnColorBlue"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/blue" />
+
+        <Button
+            android:id="@+id/btnColorYellow"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/yellow" />
+
+        <Button
+            android:id="@+id/btnColorCyan"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/cyan" />
+
+        <Button
+            android:id="@+id/btnColorMagenta"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/magenta" />
+
+        <Button
+            android:id="@+id/btnColorWhite"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/white" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnPower"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle_button_background"
+        android:src="@android:drawable/ic_lock_power_off"
+        android:contentDescription="@string/power_button" />
+
+</FrameLayout>
