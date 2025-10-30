@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="class_names">
+        <item>19KTPM1</item>
+        <item>19KTPM2</item>
+        <item>20KTPM1</item>
+        <item>20KTPM2</item>
+    </string-array>
+</resources>

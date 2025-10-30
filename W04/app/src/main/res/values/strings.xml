@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Student Management</string>
+
+    <!-- Main Activity -->
+    <string name="activity_title_main">Students</string>
+    <string name="no_students_message">No students found. Tap the + button to add one.</string>
+
+    <!-- Add/Edit Activity -->
+    <string name="activity_title_add_student">Add Student</string>
+    <string name="activity_title_edit_student">Edit Student</string>
+
+    <!-- Student Details -->
+    <string name="label_full_name">Full Name</string>
+    <string name="label_birthday">Birthday</string>
+    <string name="label_class_name">Class</string>
+    <string name="label_gender">Gender</string>
+
+    <!-- Input Hints -->
+    <string name="hint_full_name">Enter full name</string>
+    <string name="hint_birthday">Select birthday</string>
+    <string name="hint_class_name">Enter class name</string>
+
+    <!-- Button Labels -->
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_delete">Delete</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_title_delete_student">Delete Student</string>
+    <string name="dialog_message_delete_student">Are you sure you want to delete this student?</string>
+    <string name="dialog_button_positive">Delete</string>
+    <string name="dialog_button_negative">Cancel</string>
+
+    <!-- Gender Options -->
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_other">Other</string>
+    <string name="birthday_gender_format">%1$s - %2$s</string>
+
+</resources>
